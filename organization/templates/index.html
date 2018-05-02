@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+	<title>Flask Application</title>
+</head>
+
+<body>
+	<form method="POST">
+		{{ form.hidden_tag() }}
+		{{ form.username() }}
+		{{ form.password() }}
+		<button type="submit" value="login" name="Login">Log in </button>
+	</form>
+</body>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	{% block head_section %}
+	<link rel="stylesheet" type="text/css" href="/static/css/my_css.css">
+	<title> {% block title %}{% endblock %} Hello World!</title>
+	{% endblock %}
+</head>
+<body>
+	<header id="header">
+		{% block header %}
+		{% endblock %}
+	</header>
+
+	<div id="content">
+		{% block content %}
+		{% endblock %}
+	</div>
+
+	<footer id="footer">
+		{% block footer %} Hello World {% endblock %}
+	</footer>
+</body>
+</html>
