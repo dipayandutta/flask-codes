@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Variable Passing in Template</title>
+	</head>
+	<body>
+		{% for name in names%}
+			{{ name }}
+		{% endfor %}
+
+		<p>
+			{{ name }}
+		</p>
+		<p>
+			{% for key,value in dict_show.items() %}
+				{{ key }}
+				{{ value }}
+			{% endfor %}
+		</p>
+	</body>
+</html>
